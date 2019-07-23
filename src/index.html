@@ -1,15 +1,129 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Default</title>
+  <title>Sowa Lounge</title>
 </head>
 <body>
-  <div class="wrapper">
-    <h1>Default</h1>
-  </div>
+  <header class="page-header">
+    <img class="page-header__logo"
+         src="/assets/img/logo.jpg"
+         width="400" height="auto"
+         alt="Логотип Sowa Lounge">
+    <nav class="page-header__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="#">О нас</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Действующие акции</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Ассортимент</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="page-header__address">
+      <p class="page-header__city">г. Ижевск</p>
+      <p class="page-header__street">ул. Красная, 156</p>
+    </div>
+  </header>
+  <main>
+    <h1 class="visually-hidden">Sowa Lounge</h1>
+    <section class="promo">
+      <div class="promo__wrapper">
+        <h2 class="promo__title">О нас</h2>
+        <p class="promo__description">
+          Sowa lounge — это молодая кальянная в центре города с уютной атмосферой,
+          дымными кальянами, а главное приветливым персоналом.
+          Опытный кальянный мастер сможет точно подобрать для Вас аромат, исходя из ваших пожеланий и предпочтений.
+          После первого посещения Вам захочется вернуться снова!
+        </p>
+        <!-- Карусель с промо-фото -->
+        <img src="#" alt="Готовый кальян">
+        <img src="#" alt="Процесс приготовления кальяна">
+        <table class="promo__working-hours working-hours">
+          <caption class="working-hours__title">Режим работы</caption>
+          <tr class="working-hours__row">
+            <td class="working-hours_field">Пн, Вт, Ср, Чт, Вс</td>
+            <td class="working-hours_field">14:00 — 2:00</td>
+          </tr>
+          <tr class="working-hours__row">
+            <td class="working-hours_field">Пт, Сб</td>
+            <td class="working-hours_field">14:00 — 5:00</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section class="discounts">
+      <h2 class="discounts__title discounts__title--regular">Постоянные акции</h2>
+      <ul class="discounts__list--regular">
+        <li class="discounts__item">
+          <h3 class="discounts__name">Бизнес-ланч</h3>
+          <p class="discounts__description">
+            Любой кальян на глиняной чаше с 14:00 до 19:00 стоит всего 500р. Акция действует каждый день.
+          </p>
+        </li>
+        <li class="discounts__item">
+          <h3 class="discounts__name">Happy Birthday!</h3>
+          <p class="discounts__description">
+            У тебя день рождения? Приходи к нам и получай скидку 20% на все меню.
+            Акция действует 3 дня до и после дня рождения при предъявлении паспорта
+            или другого официального документа, подтверждающего дату рождения.
+          </p>
+        </li>
+      </ul>
+      <h2 class="discounts__title discounts__title--temporary">Временные акции</h2>
+    </section>
+    <section class="tobacco">
+      <h2 class="tobacco__title">Ассортимент</h2>
+      <ul class="tobacco__company-list">
+        <li class="tobacco__company-item">
+          Название фирмы табака
+          <ul class="tobacco__taste-list">
+            <li class="tobacco__taste-item">Вкус</li>
+            <li class="tobacco__taste-item">Вкус</li>
+          </ul>
+        </li>
+        <li class="tobacco__company-item">
+          Название фирмы табака
+          <ul class="tobacco__taste-list">
+            <li class="tobacco__taste-item">Вкус</li>
+            <li class="tobacco__taste-item">Вкус</li>
+            <li class="tobacco__taste-item">Вкус</li>
+            <li class="tobacco__taste-item">Вкус</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <section class="contacts">
+      <h2 class="contacts__title">Контакты</h2>
+      <p class="contacts">Мы находимся по адресу г. Ижевск, ул. Красная 156</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2182.086727520814!2d53.20032721607883!3d56.84445621473549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43e139372f2f1ab7%3A0x31d694d62f511133!2z0JrRgNCw0YHQvdCw0Y8g0YPQuy4sIDE1Niwg0JjQttC10LLRgdC6LCDRgNC10YHQv9GD0LHQu9C40LrQsCDQo9C00LzRg9GA0YLQuNGPLCA0MjYwMDg!5e0!3m2!1sru!2sru!4v1563859698011!5m2!1sru!2sru"
+              width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <p class="page-footer__company">Sowa Lounge</p>
+    <ul class="page-footer__social-list social">
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <span class="social__name">ВКонтакте</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <span class="social__name">Инстаграм</span>
+        </a>
+      </li>
+    </ul>
+    <p class="page-footer__dev">Created by Odintsov S.</p>
+  </footer>
 </body>
 </html>
